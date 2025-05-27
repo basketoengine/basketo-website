@@ -2,11 +2,11 @@
 
 ![Basketo Engine](public/images/BasketoLogo.png)
 
-## 🎮 Overview
+## Overview
 
 Basketo Engine is a powerful, open-source 2D game development platform that combines AI with traditional game development tools to streamline your workflow. Our engine provides everything you need to create, customize, and deploy 2D games across multiple platforms.
 
-## ✨ Key Features
+## Key Features
 
 - **Prompt-to-Game System**: Convert natural language descriptions into complete game codebases
 - **Visual Scripting**: Create game logic with drag-and-drop nodes or write code directly
@@ -16,7 +16,7 @@ Basketo Engine is a powerful, open-source 2D game development platform that comb
 - **2D Physics Engine**: Realistic physics simulation for your 2D games
 - **AI-Powered Tools**: Generate game assets, code, and mechanics with simple prompts
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -26,66 +26,56 @@ Basketo Engine is a powerful, open-source 2D game development platform that comb
 ### Installation
 
 ```bash
-# Clone the repository
-git clone <your-repo-url>
-
-# Navigate to the project directory
-cd migration
-
-# Install dependencies
+git clone https://github.com/basketo/engine.git
+cd basketo-website
 npm install
-
-# Start the development server
 npm run dev
 ```
 
-## 🛠️ Development
+## Development
 
 ### Project Structure
 
 ```
-migration/
-├── public/           # Static assets
-├── src/              # Source code
-│   ├── app/          # Next.js app router
-│   ├── components/   # UI components
-│   │   ├── ui/       # Reusable UI components
-│   │   └── ...       # Other components
-│   └── lib/          # Utility functions and libraries
-├── .gitignore        # Git ignore file
-├── next.config.js    # Next.js configuration
-├── package.json      # Project dependencies
-├── README.md         # Project documentation
-└── tailwind.config.js # Tailwind CSS configuration
+basko-website/
+├── public/           
+├── src/              
+│   ├── app/          
+│   ├── components/   
+│   │   ├── ui/       
+│   │   └── ...       
+│   └── lib/          
+├── .gitignore        
+├── next.config.js    
+├── package.json      
+├── README.md         
+└── tailwind.config.js
 ```
 
 ### Building for Production
 
 ```bash
-# Build the project
 npm run build
-
-# Start the production server
 npm run start
 ```
 
-## 📚 Documentation
+## Documentation
 
 Visit our documentation site for detailed guides, API references, and examples:
 
-- [Getting Started Guide](#)
-- [API Reference](#)
-- [Examples and Tutorials](#)
+- Getting Started Guide
+- API Reference
+- Examples and Tutorials
 
-## 🤝 Contributing
+## Contributing
 
-We welcome contributions! Please see our [Contributing Guide](#) for more information.
+We welcome contributions to improve Basketo Engine.
 
-## 📄 License
+## License
 
 Basketo Engine is open-source software licensed under the MIT license.
 
-## 🙏 Support
+## Support
 
 If you find Basketo Engine helpful, please consider supporting the project:
 
@@ -93,10 +83,6 @@ If you find Basketo Engine helpful, please consider supporting the project:
 - OpenCollective
 - Ko-fi
 
-## 📧 Contact
+## Contact
 
-For any questions or support, please reach out to us at:
-
-- [Website](#)
-- [Twitter](#)
-- [Discord](#)
+For questions or support, contact us through our official channels.

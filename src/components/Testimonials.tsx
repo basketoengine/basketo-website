@@ -38,7 +38,7 @@ const Testimonials = () => {
       avatar: "👩‍🎨",
     },
     {
-      quote: "I've tried other engines, but none come close to the flexibility and ease of use that Basketo provides for indie developers.",
+      quote: "I've tried other engines, but none come close to the flexibility and ease of use that Basketo provides for et developers.",
       author: "David Garcia",
       role: "Solo Game Developer",
       avatar: "👨‍💻",
@@ -46,7 +46,7 @@ const Testimonials = () => {
     {
       quote: "The asset generation capabilities saved us thousands of dollars on our latest project. It's a game-changer!",
       author: "Lisa Thompson",
-      role: "Producer, Indie Collective",
+      role: "Producer, ET Collective",
       avatar: "👩‍💼",
     },
     {
@@ -70,7 +70,7 @@ const Testimonials = () => {
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-basketo-purple via-basketo-blue to-basketo-teal bg-clip-text text-transparent">Loved by Indie Devs & Studios</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-basketo-purple via-basketo-blue to-basketo-teal bg-clip-text text-transparent">Loved by ET Devs & Studios</h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Join the growing community of developers who've accelerated their game creation process with Basketo Engine.
           </p>

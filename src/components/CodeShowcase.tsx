@@ -7,70 +7,53 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 const CodeShowcase = () => {
   const [activeTab, setActiveTab] = useState("game-loop");
 
-  const gameLoopCode = `// Game initialization logic
-basketo.init({
+  const gameLoopCode = `engine.init({
   width: 800,
   height: 600,
   background: '#000',
   physics: 'arcade',
 });
 
-// Create a player sprite
-const player = basketo.sprite({
+const player = engine.sprite({
   x: 400,
   y: 300,
   texture: 'player',
   controller: 'platformer',
 });
 
-// Game loop
-basketo.update(() => {
-  // Check for collisions
-  basketo.physics.collide(player, enemies);
-  
-  // Update game state
+engine.update(() => {
+  engine.physics.collide(player, enemies);
   world.update();
-  
-  // Render the scene
-  basketo.render();
+  engine.render();
 });`;
 
-  const aiPromptCode = `// Generate a platformer with a wizard character
-basketo.generateFromPrompt({
+  const aiPromptCode = `engine.generateFromPrompt({
   type: "platformer",
   description: "A wizard that can shoot fireballs and teleport",
   levels: 3,
   enemies: ["goblins", "flying eyes", "boss wizard"],
   theme: "dark fantasy",
   perspective: "2D side-scrolling"
-});
+});`;
 
-// The AI will generate all necessary game code, assets, and mechanics
-// based on the description above`;
-
-  const renderingCode = `// Set up the rendering pipeline
-const renderer = new basketo.WebGLRenderer({
+  const renderingCode = `const renderer = new engine.WebGLRenderer({
   antialias: true,
   shadows: true,
 });
 
-// Create a scene
-const scene = new basketo.Scene('Level 1');
+const scene = new engine.Scene('Level 1');
 
-// Add a lighting setup
-scene.add(new basketo.AmbientLight('#ffffff', 0.4));
-scene.add(new basketo.DirectionalLight('#ffeecc', 0.6));
+scene.add(new engine.AmbientLight('#ffffff', 0.4));
+scene.add(new engine.DirectionalLight('#ffeecc', 0.6));
 
-// Add post-processing effects
 renderer.postProcessing.add(
-  new basketo.BloomEffect({
+  new engine.BloomEffect({
     intensity: 0.4,
     threshold: 0.8,
   })
 );
 
-// Render the scene
-renderer.render(scene, mainCamera);`;
+renderer.render(scene, camera);`;
 
   return (
     <section className="py-20 bg-basketo-darker">

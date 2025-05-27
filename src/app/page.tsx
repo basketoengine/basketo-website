@@ -13,15 +13,12 @@ import Footer from '@/components/Footer';
 export default function Home() {
   return (
     <div className="min-h-screen bg-basketo-darker text-white relative overflow-hidden">
-      {/* Background gradient effects */}
       <div className="fixed inset-0 bg-gradient-to-br from-basketo-purple/5 via-transparent to-basketo-teal/5 pointer-events-none"></div>
       <div className="fixed top-0 left-1/4 w-[500px] h-[500px] bg-basketo-purple/10 rounded-full blur-3xl animate-pulse"></div>
       <div className="fixed bottom-0 right-1/4 w-[500px] h-[500px] bg-basketo-teal/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       
-      {/* Radial gradient overlay */}
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,rgba(0,0,0,0.8)_100%)] pointer-events-none"></div>
       
-      {/* Grid pattern overlay */}
       <div className="fixed inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNTkuNSA2MEgwVjAuNUw1OS41IDYweiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2JhKDI1NSwyNTUsMjU1LDAuMDUpIiBzdHJva2Utd2lkdGg9IjAuNSIvPjwvc3ZnPg==')] opacity-20 pointer-events-none"></div>
       
       <Header />
@@ -37,7 +34,6 @@ export default function Home() {
       </main>
       <Footer />
       
-      {/* Floating particles effect */}
       <div className="fixed inset-0 pointer-events-none">
         {Array.from({ length: 20 }).map((_, i) => (
           <div
